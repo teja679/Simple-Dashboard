@@ -27,4 +27,5 @@
 }
 .links:hover p {
     background-color: rgb(51, 127, 240);
+    transform: scale(1.1);
 }

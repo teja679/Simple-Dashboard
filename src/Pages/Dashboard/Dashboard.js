@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 import BarChart from '../../Components/DashboardPages/BarChart/BarChart'
-import Search from '../../Components/DashboardPages/Intro/Search'
+import Search from '../../Components/DashboardPages/Search/Search'
 import Transactions from '../../Components/DashboardPages/Transcations/Transactions'
 
 const Dashboard = () => {

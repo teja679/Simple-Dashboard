@@ -34,7 +34,7 @@ const HalfDonut = () => {
         },
     };
     return (
-        <div id="chart">
+        <div className="donut-div" id="chart">
             <div className="flex-div">
                 <h1>My Activity</h1>
                 <ErrorIcon sx={{fontSize: '2rem', backgroundColor: '#fff'}} />

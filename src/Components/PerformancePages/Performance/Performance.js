@@ -1,5 +1,9 @@
 import React from 'react'
 import './styles.css'
+import FeedbackIcon from '@mui/icons-material/Feedback';
+import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ErrorIcon from '@mui/icons-material/Error';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
@@ -12,41 +16,34 @@ const Performance = () => {
             name: 'Total Product',
             price: 180.75,
             icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
+            icon2: <TrendingUpIcon sx={{color: 'green', fontSize: '3rem'}} />,
         },
         {
             id: 2,
-            name: 'Total Product',
+            name: 'Total Views',
             price: 180.75,
-            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
+            icon1: <VisibilityIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingDownIcon sx={{color: 'red', fontSize: '3rem'}} />,
         },
         {
             id: 3,
-            name: 'Total Product',
+            name: 'Total Sales',
             price: 180.75,
-            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
+            icon1: <ShoppingCartIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon sx={{color: 'green', fontSize: '3rem'}} />,
         },{
             id: 1,
-            name: 'Total Product',
-            price: 180.75,
-            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
-        },
-        {
-            id: 2,
-            name: 'Total Product',
-            price: 180.75,
-            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
+            name: 'Total Users',
+            price: 2.058346,
+            icon1: <PeopleAltIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon sx={{color: 'green', fontSize: '3rem', fontSize: '3rem'}} />,
         },
         {
             id: 3,
-            name: 'Total Product',
+            name: 'Total feedbacks',
             price: 180.75,
-            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
-            icon2: <TrendingUpIcon />,
+            icon1: <FeedbackIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon sx={{color: 'green', fontSize: '3rem'}} />,
         },
     ]
   return (

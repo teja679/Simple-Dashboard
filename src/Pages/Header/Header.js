@@ -40,7 +40,6 @@ const Header = () => {
     return (
         <div className='navbar'>
             <div className='links-div'>
-                {/* <header>MARKETING</header> */}
                 {data.map((item, index) => (
                     <motion.a animate={{
                         scale: [1, 2, 2, 1, 1],
