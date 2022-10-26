@@ -1,0 +1,22 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    position: sticky;
+    width: 8rem;
+    height: 100vh;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    padding: 0 1rem;
+    border: 1px solid black;
+    /* border-radius: 2rem; */
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
