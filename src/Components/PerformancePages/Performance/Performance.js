@@ -7,7 +7,47 @@ import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 
 const Performance = () => {
     const data = [
-        
+        {
+            id: 1,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },
+        {
+            id: 2,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },
+        {
+            id: 3,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },{
+            id: 1,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },
+        {
+            id: 2,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },
+        {
+            id: 3,
+            name: 'Total Product',
+            price: 180.75,
+            icon1: <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />,
+            icon2: <TrendingUpIcon />,
+        },
     ]
   return (
     <div className='performance-div'>
@@ -15,46 +55,18 @@ const Performance = () => {
             <h1>Performance </h1>
             <ErrorIcon />
         </div>
-        <div className='lists-div'>
+        {data.map((item, index) => (
+            <div className='lists-div'>
             <div className='lists'>
-                <ShoppingBasketIcon  sx={{fontSize: '3rem'}} sx={{fontSize: '3rem'}} />
+                {item.icon1}
                 <div className='list'>
-                    <p>Total Product</p>
-                    <p>180.675</p>
+                    <p>{item.name}</p>
+                    <p>{item.price}</p>
                 </div>
             </div>
-             <TrendingUpIcon />
+            {item.icon2}
         </div>
-        <div className='lists-div'>
-            <div className='lists'>
-                <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />
-                <div className='list'>
-                    <p>Total Product</p>
-                    <p>180.675</p>
-                </div>
-            </div>
-             <TrendingUpIcon />
-        </div>
-        <div className='lists-div'>
-            <div className='lists'>
-                <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />
-                <div className='list'>
-                    <p>Total Product</p>
-                    <p>180.675</p>
-                </div>
-            </div>
-             <TrendingUpIcon />
-        </div>
-        <div className='lists-div'>
-            <div className='lists'>
-                <ShoppingBasketIcon  sx={{fontSize: '3rem'}} />
-                <div className='list'>
-                    <p>Total Product</p>
-                    <p>180.675</p>
-                </div>
-            </div>
-             <TrendingUpIcon />
-        </div>
+        ))}
         <button>View more</button>
     </div>
   )
