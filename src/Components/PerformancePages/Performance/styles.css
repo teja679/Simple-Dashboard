@@ -1,4 +1,6 @@
-
+.performance-div {
+    overflow: none;
+}
 .menu-head {
     display: flex;
     align-items: center;

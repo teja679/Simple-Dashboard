@@ -1,0 +1,25 @@
+.transactions {
+    padding-left: 2rem;
+    height: 40vh;
+    border: 1px solid var(--grey);
+    overflow-y: hidden;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    text-align: left;
+}
+.transactions .header {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+.header h1 {
+    margin-bottom: 0;
+}
+table{
+    
+}
+table, th, td {
+    padding: 1rem 0.5rem;
+}
