@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 import './styles.css'
 import SendToMobileIcon from '@mui/icons-material/SendToMobile';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -41,11 +42,15 @@ const Header = () => {
             <div className='links-div'>
                 {/* <header>MARKETING</header> */}
                 {data.map((item, index) => (
-                    <a href='/' className='links'>
+                    <motion.a animate={{
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 270, 270, 0],
+                        borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                      }} href='/' className='links'>
                         <p>
                             {item.link}
                         </p>
-                    </a>
+                    </motion.a>
                 ))}
             </div>
             <div>
