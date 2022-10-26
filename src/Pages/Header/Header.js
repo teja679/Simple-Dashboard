@@ -13,7 +13,7 @@ const Header = () => {
         {
             id: 1,
             name: 'Dashboard',
-            link: <DashboardIcon sx={{ fontSize: '2.5rem' }} />,
+            link: <DashboardIcon sx={{ fontSize: '2.5rem', }} />,
         }, {
             id: 2,
             name: 'Marketplace',

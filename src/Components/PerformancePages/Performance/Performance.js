@@ -6,6 +6,9 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 
 const Performance = () => {
+    const data = [
+        
+    ]
   return (
     <div className='performance-div'>
         <div className='menu-head'>
