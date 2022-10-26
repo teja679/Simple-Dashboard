@@ -29,6 +29,22 @@ const Transactions = () => {
             price: '$250,39',
             status: 'recieved',
         },
+        {
+            id: 3,
+            name: 'Super Packaging',
+            date: 'October 26, 2022',
+            customer: 'Marsha Jola',
+            price: '$250,39',
+            status: 'recieved',
+        },
+        {
+            id: 3,
+            name: 'Super Packaging',
+            date: 'October 26, 2022',
+            customer: 'Marsha Jola',
+            price: '$250,39',
+            status: 'recieved',
+        },
     ]
   return (
     <div className='transactions'>

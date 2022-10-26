@@ -23,9 +23,9 @@
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
-    background-color: rgb(235, 235, 235);
+    background-color: var(--white);
 }
 .links:hover p {
-    background-color: rgb(51, 127, 240);
+    background-color: var(--blue);
     transform: scale(1.1);
 }

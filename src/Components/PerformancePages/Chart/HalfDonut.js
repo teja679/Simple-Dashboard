@@ -37,7 +37,7 @@ const HalfDonut = () => {
         <div className="donut-div" id="chart">
             <div className="flex-div">
                 <h1>My Activity</h1>
-                <ErrorIcon sx={{fontSize: '2rem', backgroundColor: '#fff'}} />
+                <ErrorIcon sx={{fontSize: '2rem', backgroundColor: 'var(--darkgrey)'}} />
             </div>
             <ReactApexChart options={data.options} series={data.series} type="donut" />
         </div>

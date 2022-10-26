@@ -1,15 +1,18 @@
 .search-wrapper {
     height: 10vh;
     width: 100%;
+    width: 47rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.name-div {
+  display: flex;
 }
 .search-input {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 0.5rem;
     background-color: var(--darkgrey);
     border-radius: 1rem;
     padding: 0.7rem 2rem;
@@ -20,11 +23,15 @@
   .search-input input {
     background-color: var(--darkgrey);
     border: 0px;
-    color: black;
+    color: var(--black);
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 1rem;
   }
 .search-input input:focus {
     outline: none;
+  }
+  .name {
+    padding: 0;
+    margin: 0;
   }
