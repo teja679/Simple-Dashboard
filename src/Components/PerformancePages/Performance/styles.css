@@ -6,6 +6,7 @@
 }
 .menu-head {
     display: flex;
+    gap: 1rem;
     align-items: center;
 }
 .lists-div{

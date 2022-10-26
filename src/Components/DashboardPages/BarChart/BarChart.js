@@ -3,9 +3,11 @@ import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS } from "chart.js/auto";
 import './styles.css'
 import ErrorIcon from '@mui/icons-material/Error';
-
+import ColorToggleButton from './Toggle';
+import { useState } from 'react';
 
 const BarChart = () => {
+  const [days, setDays] = useState(30)
     const options={
         responsive: true,
         legend: {
@@ -47,6 +49,22 @@ const BarChart = () => {
           }
         ]
     }
+
+    const handleChange = async (event) => {
+      setDays(event.target.value);
+      const prices_data = await getPrices(data.id, event.target.value, type);
+      setPrices(prices_data);
+      const priorDate = getPriorDate(event.target.value);
+      var dates = getDaysArray(priorDate, today);
+      setChartData({
+        labels: dates,
+        datasets: [
+          {
+            data: prices_data?.map((data) => data[1]),
+          },
+        ],
+      });
+    };
   return (
     <div className='bar-div'>
         <div className='title-div'>
@@ -55,6 +73,7 @@ const BarChart = () => {
                 <p>Order Summary</p>
                 <ErrorIcon />
               </div>
+              {/* <ColorToggleButton /> */}
               <p>Monthly-Weekly-Today</p>
             </div>
             <h1>Total Order: 52.940</h1>
