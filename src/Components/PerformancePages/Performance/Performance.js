@@ -52,6 +52,7 @@ const Performance = () => {
             </div>
              <TrendingUpIcon />
         </div>
+        <button>View more</button>
     </div>
   )
 }

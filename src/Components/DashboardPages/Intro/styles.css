@@ -7,16 +7,24 @@
 }
 .search-input {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 2rem;
-    background-color: grey;
-}
-input {
-    background-color: grey;
-}
-input:focus {
-    text-decoration: none;
-}
+    gap: 0.5rem;
+    background-color: var(--darkgrey);
+    border-radius: 1rem;
+    padding: 0.7rem 2rem;
+    color: var(--white);
+    border: 1px solid var(--grey);
+  }
+  
+  .search-input input {
+    background-color: var(--darkgrey);
+    border: 0px;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+.search-input input:focus {
+    outline: none;
+  }

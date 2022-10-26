@@ -4,15 +4,24 @@
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    width: 15%;
+    width: 10%;
     height: 100vh;
     z-index: 101;
     top: 0;
     left: 0;
+    border-right: 1px solid var(--grey);
+    margin-right: 2rem;
 }
 
 .links {
+    display: block;
+}
+.links p {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: rgb(235, 235, 235);
 }

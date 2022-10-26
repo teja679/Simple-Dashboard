@@ -1,11 +1,13 @@
 .transactions {
     padding-left: 2rem;
+    width: 45rem;
     height: 40vh;
     border: 1px solid var(--grey);
-    overflow-y: hidden;
+    overflow-y: auto;
     margin-top: 1rem;
     border-radius: 1rem;
     text-align: left;
+    scroll-behavior: auto;
 }
 .transactions .header {
     display: flex;
@@ -17,9 +19,17 @@
 .header h1 {
     margin-bottom: 0;
 }
-table{
-    
+.trow{
+    border-bottom: 1px solid black;
 }
 table, th, td {
-    padding: 1rem 0.5rem;
+    padding-right:0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+th {
+    color: var(--grey);
+    font-weight: 600;
+    padding: 0;
+    padding-right: 0.5rem;
 }

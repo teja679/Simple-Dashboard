@@ -2,6 +2,8 @@
 import { Bar } from 'react-chartjs-2'
 import { Chart as ChartJS } from "chart.js/auto";
 import './styles.css'
+import ErrorIcon from '@mui/icons-material/Error';
+
 
 const BarChart = () => {
     const options={
@@ -47,6 +49,16 @@ const BarChart = () => {
     }
   return (
     <div className='bar-div'>
+        <div className='title-div'>
+            <div className='title-flex'>
+              <div className='title'>
+                <p>Order Summary</p>
+                <ErrorIcon />
+              </div>
+              <p>Monthly-Weekly-Today</p>
+            </div>
+            <h1>Total Order: 52.940</h1>
+        </div>
         <Bar
                 data={data}
                 width={null}

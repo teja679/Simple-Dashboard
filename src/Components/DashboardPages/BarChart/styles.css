@@ -5,3 +5,12 @@
     overflow: none;
     border: 1px solid var(--grey);
 }
+.title{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.title-flex {
+    display: flex;
+    justify-content: space-between;
+}

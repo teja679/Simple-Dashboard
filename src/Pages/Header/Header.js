@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles.css'
+import SendToMobileIcon from '@mui/icons-material/SendToMobile';
+import SettingsIcon from '@mui/icons-material/Settings';
 import DiscountOutlinedIcon from '@mui/icons-material/DiscountOutlined';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
 import AnalyticsOutlinedIcon from '@mui/icons-material/AnalyticsOutlined';
@@ -7,53 +9,57 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import LocalGroceryStoreIcon from '@mui/icons-material/LocalGroceryStore';
 const Header = () => {
+    const data = [
+        {
+            id: 1,
+            name: 'Dashboard',
+            link: <DashboardIcon sx={{ fontSize: '2.5rem' }} />,
+        }, {
+            id: 2,
+            name: 'Marketplace',
+            link: <LocalGroceryStoreIcon sx={{ fontSize: '2.5rem' }} />,
+        }, {
+            id: 2.5,
+            name: 'Orders',
+            link: <ShoppingBasketIcon sx={{ fontSize: '2.5rem' }} />,
+        }, {
+            id: 4,
+            name: 'Tracking',
+            link: <AnalyticsOutlinedIcon sx={{ fontSize: '2.5rem' }} />,
+        }, {
+            id: 5,
+            name: 'Customers',
+            link: <PeopleAltOutlinedIcon sx={{ fontSize: '2.5rem' }} />,
+        }, {
+            id: 6,
+            name: 'Discounts',
+            link: <DiscountOutlinedIcon sx={{ fontSize: '2.5rem' }} />,
+        },
+    ]
     return (
         <div className='navbar'>
-            <div className='menu-div'>
-                <h2>Flup</h2>
-            </div>
             <div className='links-div'>
-                <header>MARKETING</header>
+                {/* <header>MARKETING</header> */}
+                {data.map((item, index) => (
+                    <a href='/' className='links'>
+                        <p>
+                            {item.link}
+                        </p>
+                    </a>
+                ))}
+            </div>
+            <div>
                 <a href='/' className='links'>
-                    <DashboardIcon />
-                    <p>Dashboard</p>
+                    <p>
+                        <SettingsIcon sx={{ fontSize: '2.5rem' }} />
+                    </p>
                 </a>
                 <a href='/' className='links'>
-                    <LocalGroceryStoreIcon />
-                    <p>Marketplace</p>
+                    <p>
+                        <SendToMobileIcon sx={{ fontSize: '2.5rem' }} />
+                    </p>
                 </a>
-                <a href='/' className='links'>
-                    <ShoppingBasketIcon />
-                    <p>Orders</p>
-                </a>
-                <a href='/' className='links'>
-                    <AnalyticsOutlinedIcon />
-                    <p>Tracking</p>
-                </a>
-                <a href='/' className='links'>
-                    <PeopleAltOutlinedIcon />
-                    <p>Customers</p>
-                </a>
-                <a href='/' className='links'>
-                    <DiscountOutlinedIcon />
-                    <p>Discounts</p>
-                </a>
-                <br />
-                <header>PAYMENTS</header>
-                <a href='/' className='links'>
-                    <p>Ledger</p>
-                </a>
-                <a href='/' className='links'>
-                    <p>Taxes</p>
-                </a>
-                <br />
-                <header>SYSTEM</header>
-                <a href='/' className='links'>
-                    <p>Settings</p>
-                </a>
-                <a href='/' className='links'>
-                    <p>Dark Mode</p>
-                </a>
+              
             </div>
         </div>
     )
