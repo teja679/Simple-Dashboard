@@ -1,10 +1,14 @@
 import './App.css';
-import Dashboard from './Pages/Dashboard';
+import Activities from './Pages/Activites/Activities';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Header from './Pages/Header/Header'
 
 function App() {
   return (
     <div className="App">
-    <Dashboard />
+      <Header />
+      <Dashboard />
+      <Activities />
     </div>
   );
 }

@@ -1,0 +1,24 @@
+
+.menu-head {
+    display: flex;
+    align-items: center;
+}
+.lists-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.lists{
+    gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list {
+    
+}
+.list p {
+    margin: 0;
+    padding: 0;
+}

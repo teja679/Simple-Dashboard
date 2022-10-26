@@ -4,13 +4,12 @@
     justify-content: flex-start;
     align-items: center;
     text-align: left;
-    position: sticky;
-    width: 8rem;
+    width: 15%;
     height: 100vh;
-    z-index: 5;
+    z-index: 101;
     top: 0;
     left: 0;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     border: 1px solid black;
     /* border-radius: 2rem; */
 }
