@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;800&display=swap");
 
 :root {
-  --blue: #3a80e9;
+  --blue: #2770dd;
   --white: #ffffff;
   --black: #111;
   --grey: rgb(216, 214, 214);
@@ -9,7 +9,6 @@
   --green: #61c96f;
   --red: #f94141;
 }
-
 [data-theme="light"] {
   --white: #fff;
   --black: #111;

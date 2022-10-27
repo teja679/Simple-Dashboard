@@ -78,8 +78,8 @@ const Header = () => {
 			<div className='links-div'>
 				{data.map((item, index) => (
 					<motion.a animate={{
-						scale: [1, 2, 2, 1, 1],
-						rotate: [0, 0, 270, 270, 0],
+						scale: [1, 1.1, 1.2, 1.1, 1],
+						rotate: [0, 180, 360, 180, 360],
 						borderRadius: ["20%", "0%", "20%", "0%", "50%"],
 					}} href='/' className='links'>
 						<p>

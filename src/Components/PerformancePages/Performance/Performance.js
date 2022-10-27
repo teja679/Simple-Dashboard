@@ -64,7 +64,7 @@ const Performance = () => {
             {item.icon2}
         </div>
         ))}
-        <button>View more</button>
+        <button className='view'>View more</button>
     </div>
   )
 }

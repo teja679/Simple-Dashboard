@@ -2,7 +2,13 @@ import ReactApexChart from "react-apexcharts";
 import ErrorIcon from '@mui/icons-material/Error';
 import './styles.css'
 const HalfDonut = () => {
+    const chartOptions = {
+        labels: ['Open', 'Handled', 'Pending']
+      }
     const data = {
+        chartOptions: {
+            labels: ['Open', 'Handled', 'Pending']
+          },
         series: [20, 30, 41],
         options: {
             chart: {
@@ -39,7 +45,7 @@ const HalfDonut = () => {
                 <h1>My Activity</h1>
                 <ErrorIcon sx={{fontSize: '2rem', backgroundColor: 'var(--darkgrey)'}} />
             </div>
-            <ReactApexChart options={data.options} series={data.series} type="donut" />
+            <ReactApexChart options={data.options} chartOptions={chartOptions} series={data.series} type="donut" />
         </div>
     )
 }
